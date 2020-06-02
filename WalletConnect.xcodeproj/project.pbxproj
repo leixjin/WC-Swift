@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABCB520624867A8200083A4C /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB520524867A8200083A4C /* AnyDecodable.swift */; };
 		BB47674F236BB93600A9A9AF /* WalletConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = BB47674D236BB93600A9A9AF /* WalletConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB476775236BB98400A9A9AF /* WCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB476755236BB98300A9A9AF /* WCInteractor.swift */; };
 		BB476776236BB98400A9A9AF /* JSONRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB476757236BB98300A9A9AF /* JSONRPC.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ABCB520524867A8200083A4C /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
 		BB47674A236BB93600A9A9AF /* WalletConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WalletConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB47674D236BB93600A9A9AF /* WalletConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletConnect.h; sourceTree = "<group>"; };
 		BB47674E236BB93600A9A9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		BB476765236BB98300A9A9AF /* Ethereum */ = {
 			isa = PBXGroup;
 			children = (
+				ABCB520524867A8200083A4C /* AnyDecodable.swift */,
 				BB476766236BB98300A9A9AF /* WCEthereumSignPayload.swift */,
 				BB476767236BB98300A9A9AF /* WCEthereumTransaction.swift */,
 			);
@@ -307,6 +310,7 @@
 				BB47677A236BB98400A9A9AF /* WCEthereumInteractor.swift in Sources */,
 				BB476779236BB98400A9A9AF /* WCTrustInteractor.swift in Sources */,
 				BB476789236BB98400A9A9AF /* Encodable+Extension.swift in Sources */,
+				ABCB520624867A8200083A4C /* AnyDecodable.swift in Sources */,
 				BB476778236BB98400A9A9AF /* WCBinanceInteractor.swift in Sources */,
 				BB476777236BB98400A9A9AF /* WCSessionStore.swift in Sources */,
 				BB47678A236BB98400A9A9AF /* WCLog.swift in Sources */,

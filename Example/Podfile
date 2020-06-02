@@ -8,8 +8,7 @@ install! 'cocoapods', :generate_multiple_pod_projects => true
 
 target 'WalletConnect_Example' do
   pod 'WalletConnect', :path => '../'
-  pod 'TrustWalletCore' 
-  pod 'SwiftLint' 
+  pod 'TrustWalletCore', '0.12.25'
   target 'WalletConnect_Tests' do
     inherit! :search_paths
   end
