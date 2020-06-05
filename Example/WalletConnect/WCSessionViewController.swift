@@ -127,6 +127,12 @@ class WCSessionViewController: UIViewController {
             }))
             self?.show(alert, sender: nil)
         }
+        
+        interactor.onCustomRequest = {[weak self] (id, request) in
+            self?.interactor?.approveRequest(id: id, result: ["自定义":"允许自定义"]).cauterize()
+            /// 自己添加的 customRequest
+            self?.interactor?.sendCustomRequest(id: 0, method: "test", params: ["我就是我跑":"我就是我"]).cauterize()
+        }
     }
 
     func approve(accounts: [String], chainId: Int) {

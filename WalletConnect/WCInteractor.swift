@@ -160,6 +160,12 @@ open class WCInteractor {
         let response = JSONRPCErrorResponse(id: id, error: JSONRPCError(code: -32000, message: message))
         return encryptAndSend(data: response.encoded)
     }
+    
+    /// 自己额外添加的方法
+    open func sendCustomRequest<T: Codable>(id: Int64, method: String, params: T) -> Promise<Void> {
+        let request = JSONRPCRequest(id: id, method: method, params: params)
+        return encryptAndSend(data:request.encoded)
+    }
 }
 
 // MARK: internal funcs
