@@ -173,7 +173,7 @@ extension WCInteractor {
     private func subscribe(topic: String) {
         let message = WCSocketMessage(topic: topic, type: .sub, payload: "")
         let data = try! JSONEncoder().encode(message)
-        socket.write(data: data)
+        socket.write(string: String(data: data, encoding: .utf8)!)
         WCLog("==> subscribe: \(String(data: data, encoding: .utf8)!)")
     }
 
@@ -185,7 +185,7 @@ extension WCInteractor {
         let message = WCSocketMessage(topic: peerId ?? session.topic, type: .pub, payload: payloadString)
         let data = message.encoded
         return Promise { seal in
-            socket.write(data: data) {
+            socket.write(string: (String(data: data, encoding: .utf8)!)) {
                 WCLog("==> sent \(String(data: data, encoding: .utf8)!) ")
                 seal.fulfill(())
             }
