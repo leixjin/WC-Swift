@@ -304,6 +304,9 @@ extension WCInteractor {
                 } else if let id = json["id"] as? Int64 {
                     onCustomRequest?(id, json)
                 }
+            }else if let id = json["id"] as? Int64 {
+                // 借用 onCustomRequest 通道传递客户端 sendCustomRequest 结果信息
+                onCustomRequest?(id, json)
             }
         } catch let error {
             onError?(error)
