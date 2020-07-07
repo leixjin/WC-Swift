@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
   s.dependency 'CryptoSwift', '1.1.3'
   s.dependency 'Starscream',  '3.1.1'
   s.dependency 'PromiseKit',  '6.11.0'
+  s.dependency 'AnyCodable-FlightSchool', '0.2.3'
 end
