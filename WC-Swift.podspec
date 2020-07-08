@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'WC-Swift'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'WalletConnect Swift SDK.'
   s.description      = 'WalletConnect Swift SDK Modified Version.'
 
-  s.homepage         = 'https://github.com/hewigovens/wallet-connect-swift'
+  s.homepage         = 'https://github.com/leixjin/WC-Swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hewigovens' => '360470+hewigovens@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/hewigovens/WalletConnect.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/leixjin/WC-Swift.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
   s.source_files = 'WalletConnect/**/*'
