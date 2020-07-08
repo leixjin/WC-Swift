@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name             = 'WalletConnect'
+  s.name             = 'WC-Swift'
   s.version          = '0.1.0'
-  s.summary          = 'WalletConnect Swift SDK'
-  s.description      = 'WalletConnect Swift SDK'
+  s.summary          = 'WalletConnect Swift SDK.'
+  s.description      = 'WalletConnect Swift SDK Modified Version.'
 
   s.homepage         = 'https://github.com/hewigovens/wallet-connect-swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'WalletConnect/**/*'
   s.exclude_files = ["WalletConnect/Info.plist"]
   s.swift_version = '5.0'
+  s.static_framework = true
   
   s.dependency 'CryptoSwift', '1.1.3'
   s.dependency 'Starscream',  '3.1.1'
