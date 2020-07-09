@@ -14,6 +14,7 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift", from: "1.1.0"),
         .package(url: "https://github.com/mxcl/PromiseKit", from: "6.8.0"),
         .package(url: "https://github.com/daltoniam/Starscream", from: "3.0.0"),
+        .package(url: "https://github.com/Flight-School/AnyCodable", from: "0.2.3"),
     ],
     targets: [
         .target(
